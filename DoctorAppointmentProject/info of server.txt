@@ -1,0 +1,5 @@
+host="localhost"
+dbname="id20068504_doctorinfo"
+dbusername="id20068504_doctors"
+dbpass="Aniket@545454"
+dbtable="doctors"
