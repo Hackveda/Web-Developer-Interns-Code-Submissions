@@ -7,9 +7,9 @@ if(isset($_POST["search"]) && isset($_POST["area"])){
     echo $search_param;
     echo $search_area;
 $host="localhost";
-$dbuser="id20068504_doctor";
-$dbpass="Aniket@545454";
-$dbname="id20068504_doctorinfo";
+$dbuser="id20081464_dr";
+$dbpass="Raju@12341234";
+$dbname="id20081464_drinfo";
 
 //make connection
 $conn = new mysqli($host,$dbuser,$dbpass,$dbname);
@@ -27,7 +27,7 @@ while($row = $result->fetch_assoc()){
     $doctorinfo =$row["DoctorInformation"];
     $doctorimage= $row["DoctorImage"];
    
-   $doctor_data = $doctor_data.<div class="search-section-WYJxxj smart-layers-pointers">
+   $doctor_data = $doctor_data.'<div class="search-section-WYJxxj smart-layers-pointers">
             <div class="search-box-vYzqLm">
               <div class="search-bg-gDPMPr"></div>
               <img class="search-icon-gDPMPr" src="'.$doctorimage.'" />
@@ -36,7 +36,7 @@ while($row = $result->fetch_assoc()){
             <div class="desc-seacrh-doctor-vYzqLm roboto-normal-black-24px">
              '. $doctorinfo.'
             </div>
-          </div> ;
+          </div>' ;
 }
 
 }else{
