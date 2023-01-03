@@ -1,0 +1,22 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-sm: 15px;
+  --font-size-base: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 40px;
+  --font-size-3xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-indigo-100: #5236a1;
+  --color-black: #000;
+  --color-gray-100: #686868;
+  --color-gold: #c2af00;
+
+  /* border radiuses */
+  --br-md: 10px;
+}
