@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./nd-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Devanagari:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai Looped:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="nd-page">
+      <div class="nav-bar1">
+        <div class="menu-section1">
+          <button class="lbl-register-now1">
+            <div class="lbl-register-now-item"></div>
+            <div class="get-started1">Get Started</div>
+          </button>
+        </div>
+        <a class="about1" id="about">About</a
+        ><a class="services1" id="services">Services</a
+        ><a class="home1" id="home">Home</a
+        ><a class="logo-section1" id="logoSection" data-animate-on-scroll
+          ><div class="logo-text1"><b>Good</b><span>Health</span></div>
+          <div class="logo-bg1"></div>
+          <img class="logo-img-icon1" alt="" src="public/logo-img@2x.png"
+        /></a>
+      </div>
+      <div class="frame3">
+        <div class="frame4">
+          <div class="frame5">
+            <div class="rectangle3"></div>
+            <img class="rectangle-icon3" alt="" src="public/rectangle@2x.png" />
+          </div>
+          <b class="find-best-doctors1">Find best doctor’s</b>
+          <div class="find-your-doctor-with-minimum2">
+            Find your doctor with minimum effort.We’ve kept everything organised
+            for you
+          </div>
+        </div>
+        <div class="frame6">
+          <div class="frame7">
+            <div class="rectangle3"></div>
+            <img
+              class="rectangle-icon4"
+              alt=""
+              src="public/rectangle1@2x.png"
+            />
+          </div>
+          <b class="get-appointment1">Get Appointment</b>
+          <div class="ask-for-an-appointment-of-a-do1">
+            Ask for an appointment of a doctor quickly with almost a single
+            click. We take care of the rest
+          </div>
+        </div>
+        <div class="frame8">
+          <div class="frame9">
+            <div class="rectangle3"></div>
+            <img class="rectangle-icon3" alt="" src="public/rectangle@2x.png" />
+          </div>
+          <b class="happy-consulatations1">Happy Consulatations</b>
+          <div class="find-your-doctor-with-minimum3">
+            Find your doctor with minimum effort.We’ve kept everything organised
+            for you
+          </div>
+        </div>
+        <div class="we-found-the-following-doctors">
+          We found the following doctors for you
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var about = document.getElementById("about");
+      if (about) {
+        about.addEventListener("click", function () {
+          window.open("abput.html");
+        });
+      }
+      
+      var services = document.getElementById("services");
+      if (services) {
+        services.addEventListener("click", function () {
+          window.open("services.html");
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function () {
+          window.open("home.html");
+        });
+      }
+      
+      var logoSection = document.getElementById("logoSection");
+      if (logoSection) {
+        logoSection.addEventListener("click", function () {
+          window.open("/");
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
