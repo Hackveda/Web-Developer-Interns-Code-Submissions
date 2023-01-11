@@ -1,0 +1,33 @@
+:root {
+  /* fonts */
+  --font-hind: Hind;
+  --font-roboto: Roboto;
+  --font-jacques-francois: "Jacques Francois";
+  --font-imprint-mt-shadow: "Imprint MT Shadow";
+  --font-holtwood-one-sc: "Holtwood One SC";
+  --font-inter: Inter;
+  --font-alfa-slab-one: "Alfa Slab One";
+
+  /* font sizes */
+  --font-size-base: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+  --font-size-4xl: 40.93px;
+  --font-size-5xl: 64px;
+
+  /* Colors */
+  --color-teal: #3fa8be;
+  --color-black: #000;
+  --color-gray-100: #dae8f1;
+  --color-gray-200: #d9d9d9;
+  --color-indigo-100: #2f4180;
+  --color-indigo-200: #1a3373;
+  --color-white: #fff;
+  --color-green-100: #10ff1a;
+
+  /* border radiuses */
+  --br-sm: 20px;
+  --br-md: 68px;
+}

@@ -1,0 +1,623 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes jello-horizontal {
+  0%,
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.logo-section-bg,
+.menu-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-teal);
+}
+.menu-section {
+  width: 777px;
+  height: 94px;
+}
+.logo-section-bg {
+  width: 266px;
+  height: 85px;
+}
+.healthcare {
+  position: absolute;
+  top: 27.28px;
+  left: 0.08px;
+  display: inline-block;
+  width: 320.4px;
+  height: 46.58px;
+}
+.logo {
+  position: absolute;
+  top: 2px;
+  left: 33px;
+  width: 320.47px;
+  height: 85px;
+  opacity: 0;
+}
+.logo.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-top;
+}
+.menu-buttons-section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-teal);
+  width: 1142px;
+  height: 94px;
+}
+.span {
+  color: var(--color-black);
+}
+.about,
+.services {
+  text-decoration: none;
+  position: absolute;
+  top: 33.11px;
+  left: 357px;
+  font-weight: 700;
+  display: inline-block;
+  width: 84.84px;
+  height: 36.2px;
+  cursor: pointer;
+  color: inherit;
+}
+.services {
+  left: 177px;
+  width: 136px;
+  height: 36.32px;
+}
+.about:hover,
+.getstarted-button:hover,
+.home:hover,
+.services:hover {
+  animation: 1s ease-in-out 0s 1 normal none jello-horizontal;
+  opacity: 1;
+}
+.span1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-indigo-100);
+}
+.home {
+  text-decoration: none;
+  position: absolute;
+  top: 19px;
+  left: 55px;
+  font-weight: 700;
+  display: inline-block;
+  width: 116.78px;
+  height: 55.9px;
+  cursor: pointer;
+  color: inherit;
+}
+.get-started-bg {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  border-radius: var(--br-sm);
+  width: 258px;
+  height: 76.36px;
+}
+.get-started1 {
+  color: var(--color-gray-200);
+}
+.get-started {
+  position: absolute;
+  top: 12.82px;
+  left: 46px;
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-imprint-mt-shadow);
+  text-align: left;
+  display: inline-block;
+  width: 157px;
+  height: 40.59px;
+}
+.getstarted-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 17.09px;
+  left: 511px;
+  width: 250px;
+  height: 68.36px;
+}
+.menu-section1 {
+  left: 0;
+  width: 1142px;
+}
+.menu-section1,
+.nav-bar,
+.nav-bar-with-buttons {
+  position: absolute;
+  top: 0;
+  height: 94px;
+}
+.nav-bar-with-buttons {
+  left: 777px;
+  width: 1142px;
+  font-size: var(--font-size-xl);
+  color: var(--color-indigo-200);
+  font-family: var(--font-inter);
+}
+.nav-bar {
+  left: 0;
+  width: 1919px;
+  color: var(--color-green-100);
+}
+.banner-image-section,
+.banner-section-bg {
+  position: absolute;
+  top: 6px;
+  height: 508px;
+}
+.banner-section-bg {
+  left: 0;
+  width: 1888px;
+}
+.banner-image-section {
+  left: 955px;
+  width: 965px;
+  object-fit: cover;
+}
+.banner-text-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-teal);
+  width: 955.7px;
+  height: 513.86px;
+}
+.find-a-doctor-for {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.blank-line {
+  margin: 0;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-jacques-francois);
+}
+.find-a-doctor-for-you-now {
+  position: absolute;
+  top: 120px;
+  left: 122px;
+  display: inline-block;
+  width: 616px;
+  height: 159px;
+}
+.banner {
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 1920px;
+  height: 514px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+}
+.appointment-toggles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #638e9b;
+  width: 1164px;
+  height: 146px;
+}
+.book-an-appointment {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  display: inline-block;
+}
+.date-toggle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-200);
+  width: 237px;
+  height: 70px;
+}
+.date {
+  border: 0;
+  font-family: var(--font-imprint-mt-shadow);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: absolute;
+  top: 21px;
+  left: 73px;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 104px;
+}
+.date-toggle {
+  position: absolute;
+  top: 58px;
+  left: 25px;
+  width: 237px;
+  height: 70px;
+}
+.event-fill0-wght400-grad0-opsz-icon {
+  position: absolute;
+  top: 66px;
+  left: 25px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.location-toggle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-200);
+  width: 243px;
+  height: 75px;
+}
+.location {
+  border: 0;
+  font-family: var(--font-imprint-mt-shadow);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: absolute;
+  top: 25px;
+  left: 88px;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.location-toggle {
+  position: absolute;
+  top: 53px;
+  left: 304px;
+  width: 243px;
+  height: 75px;
+}
+.pin-drop-fill0-wght400-grad0-o-icon {
+  position: absolute;
+  top: 67px;
+  left: 307px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.specialist-toggle1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.specialist {
+  border: 0;
+  font-family: var(--font-imprint-mt-shadow);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: absolute;
+  height: 49.35%;
+  width: 69.45%;
+  top: 31.17%;
+  left: 19.29%;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.specialist-toggle {
+  position: absolute;
+  top: 51px;
+  left: 579px;
+  width: 311px;
+  height: 77px;
+  opacity: 1;
+}
+.specialist-toggle.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+}
+.arrow-downward-fill0-wght400-g-icon {
+  position: absolute;
+  top: 66px;
+  left: 582px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.book-now-toggle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: #1fba25;
+  width: 230px;
+  height: 77px;
+}
+.book-now {
+  position: absolute;
+  top: 20px;
+  left: 48px;
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-imprint-mt-shadow);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.book-now-toggle {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 51px;
+  left: 917px;
+  width: 230px;
+  height: 77px;
+}
+.book-now-toggle:hover {
+  animation: 1s ease-in-out 0s 1 normal none wobble-hor-bottom;
+  opacity: 1;
+}
+.appointment {
+  position: absolute;
+  top: 608px;
+  left: 388px;
+  width: 1164px;
+  height: 146px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-holtwood-one-sc);
+}
+.for-you-nd {
+  margin: 0;
+}
+.we-take-the-guesswork-out-of-l {
+  position: absolute;
+  top: 409px;
+  left: 122px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-jacques-francois);
+  display: inline-block;
+}
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-gray-100);
+}
+.rectangle-icon {
+  position: absolute;
+  height: calc(100% - 36px);
+  width: calc(100% - 36px);
+  top: 19px;
+  right: 17px;
+  bottom: 17px;
+  left: 19px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frame {
+  position: absolute;
+  top: 31px;
+  left: calc(50% - 161px);
+  width: 136px;
+  height: 136px;
+}
+.find-best-doctors,
+.find-your-doctor-with-minimum {
+  position: absolute;
+  top: 28px;
+  left: calc(50% - 25px);
+  line-height: 36px;
+  display: inline-block;
+  width: 237px;
+  height: 44px;
+}
+.find-your-doctor-with-minimum {
+  top: 74px;
+  left: calc(50% - 14px);
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  width: 214px;
+  height: 118px;
+}
+.frame-parent {
+  position: relative;
+  float: left;
+  left: 117px;
+  bottom: 1px;
+  width: 426px;
+  height: 199px;
+  top: 120px;
+}
+.frame-parent:hover {
+  animation: 1s ease-in-out 0s 1 normal none jello-horizontal;
+  opacity: 1;
+}
+.rectangle-icon1 {
+  position: absolute;
+  height: calc(100% - 36px);
+  width: calc(100% - 36px);
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frame1 {
+  position: absolute;
+  top: 31px;
+  left: calc(50% - 198px);
+  width: 136px;
+  height: 136px;
+}
+.ask-for-an-appointment-of-a-do,
+.get-appointment {
+  position: absolute;
+  display: inline-block;
+}
+.get-appointment {
+  top: 31px;
+  left: calc(50% - 23px);
+  line-height: 36px;
+  width: 198px;
+  height: 41px;
+}
+.ask-for-an-appointment-of-a-do {
+  top: 72px;
+  left: calc(50% - 62px);
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  width: 275px;
+  height: 111px;
+}
+.frame-group {
+  position: absolute;
+  bottom: 1px;
+  left: calc(50% - 253px);
+  width: 426px;
+  height: 199px;
+}
+.frame-container:hover,
+.frame-group:hover {
+  animation: 1s ease 0s 1 normal none jello-horizontal;
+  opacity: 1;
+}
+.frame2 {
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 177.5px);
+  width: 136px;
+  height: 136px;
+}
+.find-your-doctor-with-minimum1,
+.happy-consulatations {
+  position: absolute;
+  left: calc(50% - 41.5px);
+  display: inline-block;
+}
+.happy-consulatations {
+  top: 31px;
+  line-height: 36px;
+  width: 241px;
+  height: 44px;
+}
+.find-your-doctor-with-minimum1 {
+  top: 72px;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  width: 226px;
+  height: 125px;
+}
+.frame-container {
+  position: absolute;
+  right: 223px;
+  bottom: 0;
+  width: 425px;
+  height: 199px;
+}
+.healthy-life-in-a-single-click {
+  position: absolute;
+  top: 22px;
+  left: 671px;
+  font-size: var(--font-size-3xl);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--font-hind);
+  display: inline-block;
+  width: 579px;
+  height: 38px;
+}
+.result-section {
+  position: absolute;
+  top: 754px;
+  left: 0;
+  width: 1920px;
+  height: 326px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+.index1 {
+  position: relative;
+  background-color: var(--color-teal);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-indigo-100);
+  font-family: var(--font-alfa-slab-one);
+}
